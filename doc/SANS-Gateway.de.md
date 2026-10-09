@@ -11,7 +11,9 @@ Funktionen
 * Anpassen von CAN Messages in einem bestehenden System. Typische Use-Cases hierfür sind
   - Anpassung der angezeigten Tachogeschwindigkeit mit einem einstellbaren Faktor
   - Ansteuerung von zusätzlichen Anbauteilen wie Scheinwerfern oder Lichtbalken je nach Zustand auf dem CAN Bus
-* Übertragen von CAN Messages über andere Schnittstellen wie WiFi oder USB
+  - Steuern von externen Komponenten via GPIO in Abhängigkeit von Geschwindigkeit oder Drehzahl
+  - Anpassung der Instrumentenanzeigen bei modifizierten Fahrzeugen, z.B. im Rennsport.
+* Übertragen von CAN Messages über andere Schnittstellen wie WiFi, Bluetooth Low Energy oder USB
 * Die Einrichtung des Gateway erfolgt über WiFi im Webbrowser 
 * Hochwertiges und kompaktes Kunststoffgehäuse (118mm x 78mm x 23mm) mit Crimp-freundlichen Molex Mini-Fit Jr. Steckern
 * Intern erweiterbar über 2,54mm Pinleisten, mit genug Platz für eine zweite Platine im Gehäuse: [Bild vom geöffneten Gerät](assets/gateway-open.jpg)
@@ -26,7 +28,7 @@ Ausstattung
 * Nano-ESP32 kompatibler IO Header (2,54mm Raster)
 * USB zur Programmierung, zum Debugging und zur Kommunikation mit einem anderen System, z.B. im Testerbetrieb.
   - USB steht entweder über eine Mini-USB Buchse zur Verfügung (Bestückungsoption) oder als Kontakte für ein TC-2050 USB Kabel.
-  - Es handelt sich um ein ACM (Advanced Communication Module) Device das hohe Geschwindigkeiten ermöglicht (max. 5MBit laut Datenblatt), siche software-seitig aber wie RS-232 verhält. 
+  - Es handelt sich um ein ACM Device das hohe Geschwindigkeiten ermöglicht (max. 5MBit laut Datenblatt), sich software-seitig aber wie RS-232 verhält und mit Standard-Betriebsystemtreibern überall funktioniert. 
 * Spannungsversorgung 8-32V
 
 SANS Tester
@@ -70,7 +72,9 @@ Hardware-Features
   - IN1 (ULN Eingang) auf GPIO11 (ULN Ausgang)
   - IN2 (ULN Eingang) auf GPIO10 (ULN Ausgang)
   - Da wir einen ESP32-C6 Mini verwenden, sind GPIO10 und GPIO11 nicht an der MCU verwendbar.
-* Log-Ausgaben über USB
+* USB Schnittstelle
+  - Serielle ACM Kommunikation bis 5MBit/s für Firmware-Upload, Logging oder Daten
+  - JTAG Endpunkt ermöglicht Debugging mittels OpenOCD
   - Da GPIO16 und GPIO17 für CAN1 gebraucht werden, gibt es keine serielle UART Konsole. 
   - Durch Setzen des Fuse-Bits `UART_PRINT_CONTROL` auf `1` werden auch die selten benötigten Bootloader-Ausgaben deaktiviert. 
 
