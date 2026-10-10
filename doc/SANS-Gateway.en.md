@@ -150,39 +150,39 @@ Internal Pin‑Header Assignments
 ![](assets/SANS-Gateway-pcb-bottom-V04.png)
 
 ### J20 and J21 nanoESP32‑C6 connector
-| Pin    | MCU function | Function in the SANS Gateway |
-| ------ | ------------- | --------------------------- | 
-| J20  1 |               | GND                         | 
-| J20  2 |               | 3.3V output                 |
-| J20  3 | RESET         |                             |
-| J20  4 | GPIO4         | IN8                         | 
-| J20  5 | GPIO5         | IN7                         | 
-| J20  6 | GPIO6         | Standby control of CAN transceivers, HIGH = standby, LOW = active |
-| J20  7 | GPIO7         | OUT1                        | 
-| J20  8 | GPIO0         | IN4                         | 
-| J20  9 | GPIO1         | IN3                         | 
-| J20 10 | GPIO8         | I2C Clock                   |
-| J20 11 |               | ULN2804 output for IN2 ( = GPIO10 on the nanoESP) | 
-| J20 12 |               | ULN2804 output for IN1 ( = GPIO11 on the nanoESP) |  
-| J20 13 | GPIO12        | USB D-                      | 
-| J20 14 | GPIO13        | USB D+                      |  
-| J20 15 |               | 5V output                   |
-|        |               |                             | 
-| J21  1 |               | GND                         | 
-| J21  2 | GPIO2         | CAN0 Tx                     |
-| J21  3 | GPIO3         | CAN0 Rx                     |
-| J21  4 | GPIO16        | CAN1 Tx                     | 
-| J21  5 | GPIO17        | CAN1 Rx                     | 
-| J21  6 | GPIO15        | OUT8                        |
-| J21  7 | GPIO23        | OUT7                        |
-| J21  8 | GPIO22        | OUT6                        |
-| J21  9 | GPIO21        | OUT5                        |
-| J21 10 | GPIO20        | OUT4                        |
-| J21 11 | GPIO19        | OUT3                        |
-| J21 12 | GPIO18        | OUT2                        |
-| J21 13 | GPIO9         | OUT9, WARNING: active during boot |
-| J21 14 |               | GND output                  | 
-| J21 15 |               | 5V output                   |  
+| Connector | Pin | MCU function | Function in the SANS Gateway |
+| --------- | --- | ------------ | --------------------------- | 
+| J20       |   1 |              | GND                         | 
+| J20       |   2 |              | 3.3V output                 |
+| J20       |   3 | RESET        |                             |
+| J20       |   4 | GPIO4        | IN8                         | 
+| J20       |   5 | GPIO5        | IN7                         | 
+| J20       |   6 | GPIO6        | Standby control of CAN transceivers, HIGH = standby, LOW = active |
+| J20       |   7 | GPIO7        | OUT1                        | 
+| J20       |   8 | GPIO0        | IN4                         | 
+| J20       |   9 | GPIO1        | IN3                         | 
+| J20       |  10 | GPIO8        | I2C Clock                   |
+| J20       |  11 |              | ULN2804 output for IN2 ( = GPIO10 on the nanoESP) | 
+| J20       |  12 |              | ULN2804 output for IN1 ( = GPIO11 on the nanoESP) |  
+| J20       |  13 | GPIO12       | USB D-                      | 
+| J20       |  14 | GPIO13       | USB D+                      |  
+| J20       |  15 |              | 5V output                   |
+|           |     |              |                             | 
+| J21       |   1 |              | GND                         | 
+| J21       |   2 | GPIO2        | CAN0 Tx                     |
+| J21       |   3 | GPIO3        | CAN0 Rx                     |
+| J21       |   4 | GPIO16       | CAN1 Tx                     | 
+| J21       |   5 | GPIO17       | CAN1 Rx                     | 
+| J21       |   6 | GPIO15       | OUT8                        |
+| J21       |   7 | GPIO23       | OUT7                        |
+| J21       |   8 | GPIO22       | OUT6                        |
+| J21       |   9 | GPIO21       | OUT5                        |
+| J21       |  10 | GPIO20       | OUT4                        |
+| J21       |  11 | GPIO19       | OUT3                        |
+| J21       |  12 | GPIO18       | OUT2                        |
+| J21       |  13 | GPIO9        | OUT9, WARNING: active during boot |
+| J21       |  14 |              | GND output                  | 
+| J21       |  15 |              | 5V output                   |  
 
 ### J22 I2C and CAN buses
 | Pin    | MCU function | Function in the SANS Gateway |
