@@ -7,6 +7,11 @@ SANS Gateway
 
 Sitzsteuergerät / Seat Control Unit
 ===================================
-Range Rover, Rolls Royce & Bentley
+
+for Range Rover, Rolls Royce & Bentley
+--------------------------------------
+
 ![](doc/assets/IMG_0004.png)
 
+
+[Dokumentation Deutsch](doc/SeatControl.de.md)
