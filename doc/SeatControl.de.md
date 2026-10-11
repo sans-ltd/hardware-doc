@@ -28,8 +28,8 @@ Hardware Beschreibung
 * Moderne Relais-Matrix zum Steuern von bis zu zwei Motoren gleichzeitig
 * Präzisions-AD Wandler zum Auswerten der Potentiometer in den Spiegeln für das Speichern der Position
 
-Anmerkungen zum Einbau
-======================
+Anmerkungen zum Einbau beim Range Rover
+=======================================
 * Die Erkennung des verwendeten Joysticks erfolgt beim Einschalten. Ein Wechsel des Joystick-Typs während des Betriebs kann zu Beschädigungen führen
 * Verkabelung Richtung Fahrzeug:
   - Aufgrund der original etwas ungünstigen Masseführung muss der mit 4 6,3mm Flachkontakten bestückte Stecker als Erstes im Fahrzeugkabelbaum eingesteckt werden
